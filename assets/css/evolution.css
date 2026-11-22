@@ -1270,6 +1270,11 @@ html:not(.ev-menu-aberto):has([data-ev-hero]) .topo--escuro .topo__menu {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.ev-numeros .es-catalogo-especificacoes__item {
+  min-width: 0;
+  container-type: inline-size;
+}
+
 .ev-numeros .es-catalogo-especificacoes__item + .es-catalogo-especificacoes__item {
   border-left: 1px solid var(--ev-linha);
 }
@@ -1284,12 +1289,14 @@ html:not(.ev-menu-aberto):has([data-ev-hero]) .topo--escuro .topo__menu {
 .ev-numeros dd b {
   font-family: var(--ev-fonte-titulo);
   font-size: 1.1875rem;
+  font-size: clamp(0.75rem, 18cqi, 1.1875rem);
   font-weight: 300;
   line-height: 1;
   font-variant-numeric: tabular-nums;
 }
 
 .ev-numeros dd span {
+  flex: none;
   color: var(--ev-aco);
   font-size: 0.5625rem;
   font-weight: 800;
