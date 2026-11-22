@@ -1,0 +1,133 @@
+:root {
+  --ev-aluminio: #e9e8ee;
+  --ev-aluminio-50: #f4f3f7;
+  --ev-branco: #ffffff;
+  --ev-linha: #c9c6d2;
+  --ev-cromo: linear-gradient(180deg, #ffffff, #c9c6d2 50%, #f2f1f5);
+  --ev-cromo-texto: linear-gradient(180deg, #0d0c10 0%, #3a3744 48%, #6b6878 52%, #1f1d26 100%);
+  --ev-grafite: #0d0c10;
+  --ev-grafite-800: #1a1820;
+  --ev-grafite-linha: #2e2c36;
+  --ev-aco: #3a3744;
+  --ev-chumbo: #5c5968;
+  --ev-sobre-grafite: #dcdae3;
+  --ev-prata: #9a97a8;
+  --ev-violeta-500: #7701fa;
+  --ev-violeta-600: #6400d6;
+  --ev-violeta-700: #5200b0;
+  --ev-lilas: #c9a8ff;
+  --ev-whatsapp: #25d366;
+  --ev-erro: #b42318;
+  --ev-veu: rgb(13 12 16 / 0.72);
+  --ev-veu-forte: rgb(13 12 16 / 0.86);
+  --ev-vidro: rgb(255 255 255 / 0.92);
+  --ev-linha-escura: rgb(220 218 227 / 0.14);
+  --ev-linha-escura-forte: rgb(220 218 227 / 0.28);
+
+  --ev-fonte-titulo: "termina", "Archivo Expanded", "Albert Sans", system-ui, sans-serif;
+  --ev-fonte-texto: "Albert Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --fs-display: clamp(2.125rem, 1rem + 3vw, 4rem);
+  --fs-h1: clamp(1.75rem, 1rem + 2vw, 3rem);
+  --fs-h2: clamp(1.5rem, 1rem + 1.4vw, 2.25rem);
+  --fs-h3: clamp(1rem, 0.9rem + 0.4vw, 1.25rem);
+  --fs-numero: clamp(1.625rem, 1.2rem + 1vw, 2.5rem);
+  --fs-body-l: 1.125rem;
+  --fs-body: 1rem;
+  --fs-botao: 0.8125rem;
+  --fs-legenda: 0.8125rem;
+  --fs-rotulo: 0.6875rem;
+  --ls-rotulo: 0.24em;
+  --ls-botao: 0.1em;
+
+  --ev-chanfro-p: polygon(0 0, calc(100% - 12px) 0, 100% 18px, 100% 100%, 0 100%);
+  --ev-chanfro-m: polygon(0 0, calc(100% - 20px) 0, 100% 31px, 100% 100%, 0 100%);
+  --ev-chanfro-g: polygon(0 0, calc(100% - 28px) 0, 100% 43px, 100% 100%, 0 100%);
+  --ev-botao-corte: polygon(0 0, calc(100% - 34px) 0, 100% 100%, 0 100%);
+  --ev-regua: repeating-linear-gradient(90deg, rgb(13 12 16 / 0.06) 0 1px, transparent 1px 120px);
+
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-24: 96px;
+  --sp-32: 128px;
+  --secao-y: clamp(64px, 8vw, 128px);
+  --container: 1240px;
+  --margem: clamp(20px, 4vw, 40px);
+  --ev-topo: 4rem;
+
+  --ev-sombra-modal: 0 28px 64px rgb(13 12 16 / 0.28);
+  --ev-sombra-flutuante: 0 10px 28px rgb(0 0 0 / 0.35);
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-1: 150ms;
+  --dur-2: 250ms;
+  --dur-3: 500ms;
+
+  --es-cor-fundo: var(--ev-aluminio);
+  --es-cor-superficie: var(--ev-aluminio-50);
+  --es-cor-superficie-forte: var(--ev-linha);
+  --es-cor-texto: var(--ev-grafite);
+  --es-cor-texto-suave: var(--ev-aco);
+  --es-cor-borda: var(--ev-linha);
+  --es-cor-borda-forte: var(--ev-chumbo);
+  --es-cor-destaque: var(--ev-violeta-500);
+  --es-cor-destaque-hover: var(--ev-violeta-600);
+  --es-cor-destaque-texto: var(--ev-branco);
+  --es-cor-foco: var(--ev-violeta-700);
+  --es-cor-foco-contorno: var(--ev-branco);
+  --es-cor-sobreposicao: var(--ev-veu);
+  --es-sombra-1: none;
+  --es-sombra-2: var(--ev-sombra-modal);
+
+  --es-fonte-texto: var(--ev-fonte-texto);
+  --es-fonte-titulo: var(--ev-fonte-titulo);
+  --es-texto-p: var(--fs-body);
+  --es-texto-pequeno: 0.875rem;
+  --es-titulo-1: var(--fs-display);
+  --es-titulo-2: var(--fs-h2);
+  --es-titulo-3: var(--fs-h3);
+  --es-altura-linha: 1.65;
+  --es-altura-linha-titulo: 1.08;
+  --es-peso-titulo: 800;
+  --es-peso-forte: 700;
+
+  --es-espaco-1: 0.25rem;
+  --es-espaco-2: 0.5rem;
+  --es-espaco-3: 0.75rem;
+  --es-espaco-4: 1rem;
+  --es-espaco-5: 1.5rem;
+  --es-espaco-6: 2rem;
+  --es-espaco-7: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+  --es-espaco-secao: var(--secao-y);
+  --es-margem-lateral: var(--margem);
+  --es-largura-conteudo: 77.5rem;
+  --es-largura-texto: 42rem;
+
+  --es-raio: 0;
+  --es-raio-pequeno: 0;
+  --es-raio-pilula: 0;
+  --es-borda-largura: 1px;
+  --es-foco-largura: 3px;
+  --es-alvo-toque: 2.75rem;
+
+  --es-duracao: var(--dur-2);
+  --es-duracao-curta: var(--dur-1);
+  --es-curva: var(--ease);
+  --es-revelar-duracao: 450ms;
+  --es-revelar-distancia: 16px;
+
+  --es-camada-topo: 10;
+  --es-camada-flutuante: 20;
+  --es-camada-modal: 40;
+}
+
+@media (min-width: 64em) {
+  :root {
+    --ev-topo: 4.75rem;
+  }
+}
