@@ -1290,7 +1290,7 @@ html:not(.ev-menu-aberto):has([data-ev-hero]) .topo--escuro .topo__menu {
   font-family: var(--ev-fonte-titulo);
   font-size: 1.1875rem;
   font-size: clamp(0.75rem, 18cqi, 1.1875rem);
-  font-weight: 300;
+  font-weight: 600;
   line-height: 1;
   font-variant-numeric: tabular-nums;
 }
